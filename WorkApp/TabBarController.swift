@@ -16,15 +16,6 @@ enum Tabs : Int{
 
 final class TabBarController : UITabBarController{
     
-    /*override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        configure()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +25,7 @@ final class TabBarController : UITabBarController{
     private func configure() {
         
         tabBar.tintColor = Resources.Colors.activ
-        tabBar.barTintColor = Resources.Colors.nonactive
+        tabBar.unselectedItemTintColor = Resources.Colors.nonactive
         
         let positionOnX: CGFloat = 10
         let positionOnY: CGFloat = 14
@@ -56,17 +47,17 @@ final class TabBarController : UITabBarController{
         tabBar.itemPositioning = .centered
         
         
-        let homeViewController = UIViewController()
-        let searchViewController = UIViewController()
-        let favouriteViewController = UIViewController()
-        let settingsViewController = UIViewController()
+        let homeViewController = HomeController()
+        let searchViewController = SearchController()
+        let favouriteViewController = FavouriteController()
+        let settingsViewController = SettingController()
         
-        let homeNavigation = UINavigationController(rootViewController: homeViewController)
-        let searchNavigation = UINavigationController(rootViewController: searchViewController)
-        let favouriteNavigation = UINavigationController(rootViewController: favouriteViewController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsViewController)
+        let homeNavigation = NavigationController(rootViewController: homeViewController)
+        let searchNavigation = NavigationController(rootViewController: searchViewController)
+        let favouriteNavigation = NavigationController(rootViewController: favouriteViewController)
+        let settingsNavigation = NavigationController(rootViewController: settingsViewController)
         
-        settingsNavigation.view.backgroundColor = .white
+        
         
         settingsNavigation.tabBarItem = UITabBarItem(title: Resources.TabNames.settings,
                                                          image: Resources.TabImages.settings,

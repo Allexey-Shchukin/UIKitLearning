@@ -9,10 +9,11 @@ import UIKit
 
 enum Resources {
     enum Colors{
-        static var activ = UIColor(hexString: "#FFFFFF")
-        static var nonactive = UIColor(hexString: "#7F56D9")
-        static var tabBackground = UIColor(hexString: "#53389E")
+        static var activ = UIColor(hexString: "#232256")
+        static var nonactive = UIColor(hexString: "#655CA0")
+        static var tabBackground = UIColor(hexString: "#9E9CD3")
         static var TabBarBorder = UIColor(hexString: "#D4DDE0")
+        static var navBarBackground = UIColor(hexString: "#9E9CD3")
     }
     
     enum TabNames {
@@ -29,6 +30,10 @@ enum Resources {
         static var video = UIImage(named: "video")
         static var favourite = UIImage(named: "favourite")
         static var settings = UIImage(named: "settings")
+    }
+    
+    enum NavImages{
+        static var info = UIImage(named: "info")
     }
     
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2873E229097E2700392C68 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873E129097E2700392C68 /* NavigationController.swift */; };
+		8A2873E42909827F00392C68 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873E32909827F00392C68 /* SettingController.swift */; };
+		8A2873E62909828900392C68 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873E52909828900392C68 /* BaseController.swift */; };
+		8A2873E92909959900392C68 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873E82909959900392C68 /* HomeController.swift */; };
+		8A2873EB290995BF00392C68 /* FavouriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873EA290995BF00392C68 /* FavouriteController.swift */; };
+		8A2873ED2909963400392C68 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873EC2909963400392C68 /* SearchController.swift */; };
+		8A2873EF29099D5000392C68 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2873EE29099D5000392C68 /* InfoController.swift */; };
 		8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1302908A6BE00A7B646 /* AppDelegate.swift */; };
 		8AC9B1332908A6BE00A7B646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1322908A6BE00A7B646 /* SceneDelegate.swift */; };
 		8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1342908A6BE00A7B646 /* ViewController.swift */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A2873E129097E2700392C68 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		8A2873E32909827F00392C68 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		8A2873E52909828900392C68 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8A2873E82909959900392C68 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8A2873EA290995BF00392C68 /* FavouriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteController.swift; sourceTree = "<group>"; };
+		8A2873EC2909963400392C68 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		8A2873EE29099D5000392C68 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		8AC9B12D2908A6BE00A7B646 /* WorkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC9B1302908A6BE00A7B646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AC9B1322908A6BE00A7B646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +122,13 @@
 				8AC9B1342908A6BE00A7B646 /* ViewController.swift */,
 				8AC9B1612908AB7A00A7B646 /* SupportingFiles */,
 				8AC9B1632908ADF400A7B646 /* TabBarController.swift */,
+				8A2873E129097E2700392C68 /* NavigationController.swift */,
+				8A2873E32909827F00392C68 /* SettingController.swift */,
+				8A2873E52909828900392C68 /* BaseController.swift */,
+				8A2873E82909959900392C68 /* HomeController.swift */,
+				8A2873EA290995BF00392C68 /* FavouriteController.swift */,
+				8A2873EC2909963400392C68 /* SearchController.swift */,
+				8A2873EE29099D5000392C68 /* InfoController.swift */,
 			);
 			path = WorkApp;
 			sourceTree = "<group>";
@@ -288,11 +309,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */,
+				8A2873EF29099D5000392C68 /* InfoController.swift in Sources */,
+				8A2873E62909828900392C68 /* BaseController.swift in Sources */,
 				8AC9B1642908ADF400A7B646 /* TabBarController.swift in Sources */,
 				8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */,
+				8A2873E92909959900392C68 /* HomeController.swift in Sources */,
 				8AC9B16A2908B12900A7B646 /* Resources.swift in Sources */,
+				8A2873E42909827F00392C68 /* SettingController.swift in Sources */,
+				8A2873ED2909963400392C68 /* SearchController.swift in Sources */,
 				8AC9B1672908B0F600A7B646 /* UIColor & Extentions.swift in Sources */,
+				8A2873E229097E2700392C68 /* NavigationController.swift in Sources */,
 				8AC9B1332908A6BE00A7B646 /* SceneDelegate.swift in Sources */,
+				8A2873EB290995BF00392C68 /* FavouriteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
