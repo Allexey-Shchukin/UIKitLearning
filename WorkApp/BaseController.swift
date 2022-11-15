@@ -13,16 +13,19 @@ class BaseController : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationButton()
+        configureBaseController()
     }
 }
 
 @objc extension BaseController {
     
-    func configure(){
-        view.backgroundColor = .white
-    }
+    
     func layoutViews(){}
     func addSubViews(){}
+    
+    private func configureBaseController(){
+        view.backgroundColor = .white
+    }
     
     func addNavigationButton(){
         

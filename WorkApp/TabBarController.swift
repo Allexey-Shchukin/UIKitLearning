@@ -28,21 +28,7 @@ final class TabBarController : UITabBarController{
         tabBar.unselectedItemTintColor = Resources.Colors.nonactive
         
         let positionOnX: CGFloat = 10
-        let positionOnY: CGFloat = 14
         let width = tabBar.bounds.width - positionOnX * 2 - 20
-        let height = tabBar.bounds.height + positionOnY * 2
-        let roundLayer = CAShapeLayer()
-        let bezierPath = UIBezierPath(
-            roundedRect: CGRect(
-                x : positionOnX + 10,
-                y : tabBar.bounds.minY - positionOnY,
-                width: width,
-                height: height
-            ), cornerRadius: height / 4
-        )
-        roundLayer.path = bezierPath.cgPath
-        roundLayer.fillColor = Resources.Colors.tabBackground.cgColor
-        tabBar.layer.insertSublayer(roundLayer, at: 0)
         tabBar.itemWidth = width / 7
         tabBar.itemPositioning = .centered
         

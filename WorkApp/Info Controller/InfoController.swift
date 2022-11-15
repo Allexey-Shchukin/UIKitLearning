@@ -7,18 +7,14 @@
 
 import UIKit
 
-class InfoController : UIViewController{
+class InfoController : UIPageViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
     }
-}
-
-extension InfoController{
     
     func configure(){
         
-        view.backgroundColor = Resources.Colors.tabBackground
+        view.backgroundColor = .green
     }
 }

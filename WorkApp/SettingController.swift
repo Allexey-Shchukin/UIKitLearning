@@ -13,7 +13,6 @@ class SettingController : BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure()
         configureSettingView()
     }
     

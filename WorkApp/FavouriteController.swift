@@ -12,7 +12,6 @@ class FavouriteController : BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure()
         configureFavouriteView()
     }
     

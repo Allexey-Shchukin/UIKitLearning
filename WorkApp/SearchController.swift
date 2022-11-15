@@ -13,7 +13,6 @@ class SearchController : BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure()
         configureSearchView()
     }
     
