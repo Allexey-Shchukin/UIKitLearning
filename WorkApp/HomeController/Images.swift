@@ -17,5 +17,6 @@ struct Images{
     static let hunter = UIImage(named: "hunter")!
     static let kaguya = UIImage(named: "kaguya")!
     static let shtein = UIImage(named: "shtein")!
+    
 }
 

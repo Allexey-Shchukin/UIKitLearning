@@ -18,8 +18,6 @@
 		8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1302908A6BE00A7B646 /* AppDelegate.swift */; };
 		8AC9B1332908A6BE00A7B646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1322908A6BE00A7B646 /* SceneDelegate.swift */; };
 		8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1342908A6BE00A7B646 /* ViewController.swift */; };
-		8AC9B13A2908A6C100A7B646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9B1392908A6C100A7B646 /* Assets.xcassets */; };
-		8AC9B13D2908A6C100A7B646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9B13B2908A6C100A7B646 /* LaunchScreen.storyboard */; };
 		8AC9B1482908A6C100A7B646 /* WorkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1472908A6C100A7B646 /* WorkAppTests.swift */; };
 		8AC9B1522908A6C100A7B646 /* WorkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1512908A6C100A7B646 /* WorkAppUITests.swift */; };
 		8AC9B1542908A6C100A7B646 /* WorkAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1532908A6C100A7B646 /* WorkAppUITestsLaunchTests.swift */; };
@@ -29,9 +27,9 @@
 		8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B329251CDC00699854 /* InfoViewController1.swift */; };
 		8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B529251CED00699854 /* InfoViewController2.swift */; };
 		8AF558B829251CFB00699854 /* InfoViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B729251CFB00699854 /* InfoViewController3.swift */; };
-		8AF558BB2925222800699854 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BA2925222800699854 /* TableViewCell.swift */; };
 		8AF558BD2925225200699854 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BC2925225200699854 /* Images.swift */; };
 		8AF558BF2925231C00699854 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BE2925231C00699854 /* Post.swift */; };
+		8AF558C02925276B00699854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9B1392908A6C100A7B646 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +76,6 @@
 		8AF558B329251CDC00699854 /* InfoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController1.swift; sourceTree = "<group>"; };
 		8AF558B529251CED00699854 /* InfoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController2.swift; sourceTree = "<group>"; };
 		8AF558B729251CFB00699854 /* InfoViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController3.swift; sourceTree = "<group>"; };
-		8AF558BA2925222800699854 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8AF558BC2925225200699854 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8AF558BE2925231C00699854 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2873E82909959900392C68 /* HomeController.swift */,
-				8AF558BA2925222800699854 /* TableViewCell.swift */,
 				8AF558BC2925225200699854 /* Images.swift */,
 				8AF558BE2925231C00699854 /* Post.swift */,
 			);
@@ -319,8 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC9B13D2908A6C100A7B646 /* LaunchScreen.storyboard in Resources */,
-				8AC9B13A2908A6C100A7B646 /* Assets.xcassets in Resources */,
+				8AF558C02925276B00699854 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +343,6 @@
 				8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */,
 				8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */,
 				8A2873EF29099D5000392C68 /* InfoController.swift in Sources */,
-				8AF558BB2925222800699854 /* TableViewCell.swift in Sources */,
 				8A2873E62909828900392C68 /* BaseController.swift in Sources */,
 				8AC9B1642908ADF400A7B646 /* TabBarController.swift in Sources */,
 				8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */,
