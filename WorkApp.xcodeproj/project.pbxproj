@@ -29,6 +29,9 @@
 		8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B329251CDC00699854 /* InfoViewController1.swift */; };
 		8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B529251CED00699854 /* InfoViewController2.swift */; };
 		8AF558B829251CFB00699854 /* InfoViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B729251CFB00699854 /* InfoViewController3.swift */; };
+		8AF558BB2925222800699854 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BA2925222800699854 /* TableViewCell.swift */; };
+		8AF558BD2925225200699854 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BC2925225200699854 /* Images.swift */; };
+		8AF558BF2925231C00699854 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BE2925231C00699854 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		8AF558B329251CDC00699854 /* InfoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController1.swift; sourceTree = "<group>"; };
 		8AF558B529251CED00699854 /* InfoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController2.swift; sourceTree = "<group>"; };
 		8AF558B729251CFB00699854 /* InfoViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController3.swift; sourceTree = "<group>"; };
+		8AF558BA2925222800699854 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8AF558BC2925225200699854 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		8AF558BE2925231C00699854 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		8AC9B12F2908A6BE00A7B646 /* WorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				8AF558B92925220300699854 /* HomeController */,
 				8A8534AB290AAD060055439A /* Info Controller */,
 				8AC9B1652908AFF500A7B646 /* Helpers */,
 				8AC9B1602908AB4E00A7B646 /* Application */,
@@ -145,7 +152,6 @@
 				8A2873E129097E2700392C68 /* NavigationController.swift */,
 				8A2873E32909827F00392C68 /* SettingController.swift */,
 				8A2873E52909828900392C68 /* BaseController.swift */,
-				8A2873E82909959900392C68 /* HomeController.swift */,
 				8A2873EA290995BF00392C68 /* FavouriteController.swift */,
 				8A2873EC2909963400392C68 /* SearchController.swift */,
 				8A615835292416AF0008D1D6 /* TableViewCell.swift */,
@@ -196,6 +202,17 @@
 				8AC9B1692908B12900A7B646 /* Resources.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8AF558B92925220300699854 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				8A2873E82909959900392C68 /* HomeController.swift */,
+				8AF558BA2925222800699854 /* TableViewCell.swift */,
+				8AF558BC2925225200699854 /* Images.swift */,
+				8AF558BE2925231C00699854 /* Post.swift */,
+			);
+			path = HomeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +348,7 @@
 				8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */,
 				8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */,
 				8A2873EF29099D5000392C68 /* InfoController.swift in Sources */,
+				8AF558BB2925222800699854 /* TableViewCell.swift in Sources */,
 				8A2873E62909828900392C68 /* BaseController.swift in Sources */,
 				8AC9B1642908ADF400A7B646 /* TabBarController.swift in Sources */,
 				8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */,
@@ -338,6 +356,7 @@
 				8A2873E92909959900392C68 /* HomeController.swift in Sources */,
 				8AF558B829251CFB00699854 /* InfoViewController3.swift in Sources */,
 				8AC9B16A2908B12900A7B646 /* Resources.swift in Sources */,
+				8AF558BD2925225200699854 /* Images.swift in Sources */,
 				8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */,
 				8A2873E42909827F00392C68 /* SettingController.swift in Sources */,
 				8A2873ED2909963400392C68 /* SearchController.swift in Sources */,
@@ -345,6 +364,7 @@
 				8A2873E229097E2700392C68 /* NavigationController.swift in Sources */,
 				8AC9B1332908A6BE00A7B646 /* SceneDelegate.swift in Sources */,
 				8A2873EB290995BF00392C68 /* FavouriteController.swift in Sources */,
+				8AF558BF2925231C00699854 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

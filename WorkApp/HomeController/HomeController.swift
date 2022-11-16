@@ -11,10 +11,15 @@ class HomeController : BaseController {
     
     let tableView = UITableView()
     
+    var posts : [Post] = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHomeView()
         configureTableView()
+        posts = fethData()
+        setTableViewDelegates()
+        tableViewLayouts()
     }
     
     
@@ -58,7 +63,7 @@ class HomeController : BaseController {
 extension HomeController : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        posts.count
     }
     
     
@@ -66,5 +71,19 @@ extension HomeController : UITableViewDelegate,UITableViewDataSource{
         return UITableViewCell()
     }
     
+    
+}
+
+
+func fethData() -> [Post]{
+    
+    let post1 = Post(image: Images.shtein, title: "shtein")
+    let post2 = Post(image: Images.kaguya, title: "kaguya")
+    let post3 = Post(image: Images.hunter, title: "hunter")
+    let post4 = Post(image: Images.bleach, title: "bleach")
+    let post5 = Post(image: Images.alchemist, title: "alchemist")
+    let post6 = Post(image: Images.gintama, title: "gintama")
+    
+    return [post1,post2,post3,post4,post5,post6]
     
 }
