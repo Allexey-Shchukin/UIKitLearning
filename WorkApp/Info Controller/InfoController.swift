@@ -15,6 +15,5 @@ class InfoController : UIPageViewController{
     
     func configure(){
         
-        view.backgroundColor = .green
     }
 }
