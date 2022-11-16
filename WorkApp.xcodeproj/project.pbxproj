@@ -26,6 +26,9 @@
 		8AC9B1642908ADF400A7B646 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1632908ADF400A7B646 /* TabBarController.swift */; };
 		8AC9B1672908B0F600A7B646 /* UIColor & Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1662908B0F600A7B646 /* UIColor & Extentions.swift */; };
 		8AC9B16A2908B12900A7B646 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B1692908B12900A7B646 /* Resources.swift */; };
+		8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B329251CDC00699854 /* InfoViewController1.swift */; };
+		8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B529251CED00699854 /* InfoViewController2.swift */; };
+		8AF558B829251CFB00699854 /* InfoViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558B729251CFB00699854 /* InfoViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		8AC9B1632908ADF400A7B646 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8AC9B1662908B0F600A7B646 /* UIColor & Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor & Extentions.swift"; sourceTree = "<group>"; };
 		8AC9B1692908B12900A7B646 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		8AF558B329251CDC00699854 /* InfoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController1.swift; sourceTree = "<group>"; };
+		8AF558B529251CED00699854 /* InfoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController2.swift; sourceTree = "<group>"; };
+		8AF558B729251CFB00699854 /* InfoViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				8A2873EE29099D5000392C68 /* InfoController.swift */,
+				8AF558B329251CDC00699854 /* InfoViewController1.swift */,
+				8AF558B529251CED00699854 /* InfoViewController2.swift */,
+				8AF558B729251CFB00699854 /* InfoViewController3.swift */,
 			);
 			path = "Info Controller";
 			sourceTree = "<group>";
@@ -320,13 +329,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC9B1352908A6BE00A7B646 /* ViewController.swift in Sources */,
+				8AF558B629251CED00699854 /* InfoViewController2.swift in Sources */,
 				8A2873EF29099D5000392C68 /* InfoController.swift in Sources */,
 				8A2873E62909828900392C68 /* BaseController.swift in Sources */,
 				8AC9B1642908ADF400A7B646 /* TabBarController.swift in Sources */,
 				8AC9B1312908A6BE00A7B646 /* AppDelegate.swift in Sources */,
 				8A615836292416AF0008D1D6 /* TableViewCell.swift in Sources */,
 				8A2873E92909959900392C68 /* HomeController.swift in Sources */,
+				8AF558B829251CFB00699854 /* InfoViewController3.swift in Sources */,
 				8AC9B16A2908B12900A7B646 /* Resources.swift in Sources */,
+				8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */,
 				8A2873E42909827F00392C68 /* SettingController.swift in Sources */,
 				8A2873ED2909963400392C68 /* SearchController.swift in Sources */,
 				8AC9B1672908B0F600A7B646 /* UIColor & Extentions.swift in Sources */,
