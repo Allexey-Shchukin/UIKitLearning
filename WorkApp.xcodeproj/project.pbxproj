@@ -30,6 +30,7 @@
 		8AF558BD2925225200699854 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BC2925225200699854 /* Images.swift */; };
 		8AF558BF2925231C00699854 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558BE2925231C00699854 /* Post.swift */; };
 		8AF558C02925276B00699854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9B1392908A6C100A7B646 /* Assets.xcassets */; };
+		8AF558C52925A4EA00699854 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF558C42925A4EA00699854 /* PostViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		8AF558B729251CFB00699854 /* InfoViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController3.swift; sourceTree = "<group>"; };
 		8AF558BC2925225200699854 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8AF558BE2925231C00699854 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8AF558C42925A4EA00699854 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				8A2873E82909959900392C68 /* HomeController.swift */,
 				8AF558BC2925225200699854 /* Images.swift */,
 				8AF558BE2925231C00699854 /* Post.swift */,
+				8AF558C42925A4EA00699854 /* PostViewCell.swift */,
 			);
 			path = HomeController;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				8AF558B429251CDC00699854 /* InfoViewController1.swift in Sources */,
 				8A2873E42909827F00392C68 /* SettingController.swift in Sources */,
 				8A2873ED2909963400392C68 /* SearchController.swift in Sources */,
+				8AF558C52925A4EA00699854 /* PostViewCell.swift in Sources */,
 				8AC9B1672908B0F600A7B646 /* UIColor & Extentions.swift in Sources */,
 				8A2873E229097E2700392C68 /* NavigationController.swift in Sources */,
 				8AC9B1332908A6BE00A7B646 /* SceneDelegate.swift in Sources */,

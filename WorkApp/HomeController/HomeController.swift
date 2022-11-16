@@ -13,6 +13,12 @@ class HomeController : BaseController {
     
     var posts : [Post] = [Post]()
     
+    struct Cell{
+        
+        static let postCell = "PostViewCell"
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHomeView()
@@ -20,6 +26,8 @@ class HomeController : BaseController {
         posts = fethData()
         setTableViewDelegates()
         tableViewLayouts()
+        tableView.register(PostViewCell.self, forCellReuseIdentifier: Cell.postCell)
+        tableView.rowHeight = 150
     }
     
     
@@ -68,7 +76,10 @@ extension HomeController : UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: Cell.postCell) as! PostViewCell
+        let post = posts[indexPath.row]
+        cell.set(post: post)
+        return cell
     }
     
     
@@ -77,12 +88,12 @@ extension HomeController : UITableViewDelegate,UITableViewDataSource{
 
 func fethData() -> [Post]{
     
-    let post1 = Post(image: Images.shtein, title: "shtein")
-    let post2 = Post(image: Images.kaguya, title: "kaguya")
-    let post3 = Post(image: Images.hunter, title: "hunter")
-    let post4 = Post(image: Images.bleach, title: "bleach")
-    let post5 = Post(image: Images.alchemist, title: "alchemist")
-    let post6 = Post(image: Images.gintama, title: "gintama")
+    let post1 = Post(image: Images.shtein, title: "Steins' Gate")
+    let post2 = Post(image: Images.kaguya, title: "Kaguya-sama wa Kokurasetai: Ultra Romantic")
+    let post3 = Post(image: Images.hunter, title: "Hunter x Hunter")
+    let post4 = Post(image: Images.bleach, title: "Bleach: Sennen Kessen-hen")
+    let post5 = Post(image: Images.alchemist, title: "Fullmetal Alchemist: Brotherhood")
+    let post6 = Post(image: Images.gintama, title: "Gintama'")
     
     return [post1,post2,post3,post4,post5,post6]
     
