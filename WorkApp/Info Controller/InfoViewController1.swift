@@ -10,12 +10,15 @@ import UIKit
 class InfoViewController1: UIViewController {
 
     var picture = UIImageView()
+    var text = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
         view.addSubview(picture)
+        view.addSubview(text)
         configureImage()
+        configureText()
     }
     
     
@@ -35,5 +38,19 @@ class InfoViewController1: UIViewController {
         picture.widthAnchor.constraint(equalTo: picture.heightAnchor, multiplier: 590/725).isActive = true
         
     }
+    
+    func configureText(){
+        
+        text.text = "Привет"
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+        text.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        text.heightAnchor.constraint(equalTo: view.heightAnchor, constant: 300).isActive = true
+        text.font = UIFont.boldSystemFont(ofSize: 40)
+        text.textColor = .white
+        
+    }
+    
+    
 
 }

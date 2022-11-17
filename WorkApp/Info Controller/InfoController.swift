@@ -9,6 +9,10 @@ import UIKit
 
 class InfoController : UIPageViewController{
     
+    let initialPage = 0
+    
+    var pageControll = UIPageControl()
+    
     override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil) {
         
         super.init(transitionStyle: .scroll, navigationOrientation: navigationOrientation, options: options)
@@ -28,9 +32,26 @@ class InfoController : UIPageViewController{
         super.viewDidLoad()
         setViewControllers()
         setDelegates()
+        view.addSubview(pageControll)
+        stylePageControl()
     }
     
     func configure(){
+        
+    }
+    
+    func stylePageControl(){
+        
+        pageControll.translatesAutoresizingMaskIntoConstraints = false
+        pageControll.currentPage = initialPage
+        pageControll.currentPageIndicatorTintColor = .black
+        pageControll.pageIndicatorTintColor = .systemGray2
+        pageControll.numberOfPages = pages.count
+        pageControll.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        pageControll.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        pageControll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        pageControll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        
         
     }
     
@@ -44,12 +65,13 @@ class InfoController : UIPageViewController{
         pages.append(view2)
         pages.append(view3)
         
-        setViewControllers([pages[0]], direction: .forward, animated: true, completion: nil)
+        setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         
     }
     
     func setDelegates(){
         dataSource = self
+        delegate = self
     }
     
     
@@ -82,7 +104,15 @@ extension InfoController : UIPageViewControllerDataSource{
         }
     }
     
+}
+
+extension InfoController : UIPageViewControllerDelegate{
     
-    
-    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        guard let viewControllers = pageViewController.viewControllers else { return }
+        guard let currentIndex = pages.firstIndex(of: viewControllers[0]) else { return }
+        
+        pageControll.currentPage = currentIndex
+        
+    }
 }
