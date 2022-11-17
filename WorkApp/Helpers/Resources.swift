@@ -36,4 +36,9 @@ enum Resources {
         static var info = UIImage(named: "info")
     }
     
+    enum InfoImages{
+        
+        static var infoImage1 = UIImage(named : "animeGirl1")!
+    }
+    
 }
