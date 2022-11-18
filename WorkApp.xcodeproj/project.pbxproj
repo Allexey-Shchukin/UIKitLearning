@@ -118,6 +118,14 @@
 			path = "Info Controller";
 			sourceTree = "<group>";
 		};
+		8A98AC622926FB2F0018A0B1 /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				8A2873E32909827F00392C68 /* SettingController.swift */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
 		8AC9B1242908A6BE00A7B646 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +149,7 @@
 		8AC9B12F2908A6BE00A7B646 /* WorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A98AC622926FB2F0018A0B1 /* SettingController */,
 				8AF558B92925220300699854 /* HomeController */,
 				8A8534AB290AAD060055439A /* Info Controller */,
 				8AC9B1652908AFF500A7B646 /* Helpers */,
@@ -149,7 +158,6 @@
 				8AC9B1612908AB7A00A7B646 /* SupportingFiles */,
 				8AC9B1632908ADF400A7B646 /* TabBarController.swift */,
 				8A2873E129097E2700392C68 /* NavigationController.swift */,
-				8A2873E32909827F00392C68 /* SettingController.swift */,
 				8A2873E52909828900392C68 /* BaseController.swift */,
 				8A2873EA290995BF00392C68 /* FavouriteController.swift */,
 				8A2873EC2909963400392C68 /* SearchController.swift */,
