@@ -13,7 +13,6 @@ class SettingController : BaseController {
     var progress = UIProgressView()
     var progressButton = UIButton()
     var allertButton = UIButton()
-    var allert = UIAlertController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,11 +81,19 @@ class SettingController : BaseController {
         allertButton.layer.borderWidth = 2
         allertButton.layer.borderColor = Resources.Colors.activ.cgColor
         
+        allertButton.addTarget(self, action: #selector(showAllertController) , for: .touchUpInside)
+        
     }
     
-    func configureAllert(){
+    @objc func showAllertController(){
         
-        allert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Hey", message: "Dont't touch this button", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+        
+        self.present(alert, animated: true)
         
     }
     
